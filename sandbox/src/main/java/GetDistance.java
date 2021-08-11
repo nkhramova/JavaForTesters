@@ -1,15 +1,9 @@
 
 public class GetDistance {
     public static void main(String [] args){
-        Point p1 = new Point();
-        p1.x = 2;
-        p1.y = 5;
+        Point p = new Point(3, 5, 7, 1);
 
-        Point p2 = new Point();
-        p2.x = 7;
-        p2.y = 3;
-
-        String s = String.format("Расстояние между точками %d,%d и %d,%d = %f", p1.x, p1.y, p2.x, p2.y, Point.distance(p1, p2));
+        String s = String.format("Расстояние между точками %d,%d и %d,%d = %f", p.p1_x, p.p1_y, p.p2_x, p.p2_y, p.distance());
         System.out.println(s);
 
     }
